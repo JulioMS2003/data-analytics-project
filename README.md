@@ -52,7 +52,6 @@ Se procesan datos crudos para:
 Output:
 
 * clean_orders
-* clean_customers
 
 ---
 
