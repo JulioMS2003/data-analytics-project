@@ -1,12 +1,15 @@
 # 📊 End-to-End Data Analytics Project
 
-Este proyecto simula un flujo completo de análisis de datos como en un entorno empresarial, desde datos crudos hasta insights de negocio.
+Este proyecto simula un flujo completo de análisis de datos en un entorno empresarial, desde datos crudos hasta insights de negocio.
+
+---
 
 ## 🧠 Objetivo
 
-Construir un sistema de análisis de ventas que permita:
+Diseñar un sistema de análisis de ventas que permita:
 
-* Limpiar datos inconsistentes
+* Procesar datos crudos
+* Limpiar y validar información
 * Modelar datos para análisis
 * Generar métricas clave
 * Obtener insights de negocio
@@ -15,15 +18,15 @@ Construir un sistema de análisis de ventas que permita:
 
 ## 🏗️ Arquitectura del Proyecto
 
-El flujo de datos sigue este proceso:
+El flujo de datos sigue el siguiente proceso:
 
-Raw Data → Data Cleaning → Data Modeling → Data Analysis → Dashboard
+Raw Data → Data Cleaning → Data Modeling → Data Analysis → Dashboard (próximamente)
 
 ---
 
 ## 📁 Estructura del Proyecto
 
-```
+```id="1uxjkg"
 data-analytics-project/
 ├── 01_data_cleaning/
 ├── 02_data_modeling/
@@ -34,22 +37,23 @@ data-analytics-project/
 
 ## ⚙️ Tecnologías Utilizadas
 
-* SQL (MySQL)
-* Excel
+* SQL Server
+* SQL Server Management Studio (SSMS)
+* Excel / Power BI (para visualización - próximamente)
 * GitHub
 
 ---
 
 ## 🔹 1. Data Cleaning
 
-Se procesan datos crudos para:
+Se procesan datos crudos para mejorar su calidad:
 
-* Eliminar duplicados
-* Manejar valores nulos
-* Corregir formatos
-* Validar consistencia
+* Eliminación de duplicados
+* Conversión de fechas
+* Limpieza de texto
+* Manejo de valores nulos
 
-Output:
+**Output:**
 
 * clean_orders
 
@@ -57,38 +61,49 @@ Output:
 
 ## 🔹 2. Data Modeling
 
-Se implementa un modelo tipo **Star Schema**:
+Se implementa un modelo estrella (Star Schema):
 
-* Tabla de hechos: fact_sales
-* Tablas de dimensión: customers, products, date
+* fact_sales → métricas de ventas
+* dim_customer → información de clientes
+* dim_product → información de productos
+* dim_date → dimensión temporal
+
+Se aplican:
+
+* Primary Keys
+* Foreign Keys
+* Normalización de datos
 
 ---
 
 ## 🔹 3. Data Analysis
 
-Se analizan los datos para responder preguntas de negocio:
+Se realizan análisis orientados a negocio:
 
-* ¿Qué clientes generan más ingresos?
-* ¿Qué productos tienen mejor rendimiento?
-* ¿Cómo evoluciona el negocio mes a mes?
-
----
-
-## 📊 Dashboard
-
-Se construye un dashboard en Excel con:
-
-* KPIs principales
-* Análisis temporal
+* KPIs principales (Revenue, Orders, Ticket promedio)
+* Análisis temporal (tendencias y crecimiento mensual)
 * Segmentación de clientes
+* Productos más vendidos
+* Análisis geográfico
 
 ---
 
 ## 🔍 Insights Clave
 
-* El 20% de clientes genera la mayor parte de ingresos
-* Se identifican meses con crecimiento negativo
-* Algunos productos tienen baja rotación
+* Existe variabilidad en el crecimiento mensual de ingresos
+* Un grupo reducido de clientes concentra gran parte del revenue
+* Algunas categorías dominan las ventas totales
+* Se identifican regiones con menor desempeño
+
+---
+
+## 📊 Dashboard
+
+Próxima fase del proyecto:
+
+* Construcción de dashboard en Excel o Power BI
+* Visualización de KPIs
+* Análisis interactivo
 
 ---
 
@@ -97,9 +112,9 @@ Se construye un dashboard en Excel con:
 Este proyecto demuestra:
 
 * Construcción de pipelines de datos
-* Modelado de datos para análisis
-* Generación de métricas de negocio
-* Capacidad de obtener insights accionables
+* Modelado de datos tipo empresarial
+* Uso de SQL para análisis de negocio
+* Generación de insights accionables
 
 ---
 
