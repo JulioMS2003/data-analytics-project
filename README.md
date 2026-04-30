@@ -62,12 +62,6 @@ Se implementa un modelo tipo **Star Schema**:
 * Tabla de hechos: fact_sales
 * Tablas de dimensión: customers, products, date
 
-Se construyen métricas como:
-
-* Revenue
-* Profit
-* Growth %
-
 ---
 
 ## 🔹 3. Data Analysis
