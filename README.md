@@ -94,5 +94,12 @@ data-analytics-project/
 
 ---
 
+## 💡 Motivación
+
+Realicé este proyecto para mejorar mis habilidades en SQL y Power BI,
+y entender cómo se trabaja un flujo completo de análisis de datos en un entorno real.
+
+---
+
 ## 👤 Autor
 Julio Manchay
