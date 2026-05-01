@@ -1,30 +1,46 @@
-# 🧹 Data Cleaning
+# 🧹 Limpieza de Datos
 
-Esta fase del proyecto se enfoca en transformar datos crudos en datos limpios y listos para análisis.
+## 📌 Descripción
+En esta etapa se realizó la limpieza y preparación de los datos para garantizar su calidad antes del análisis.
 
-## 📥 Input
+Se trabajó con SQL Server utilizando T-SQL para transformar datos crudos en información estructurada.
 
-* Tabla: raw_orders
+---
 
-## ⚙️ Procesos realizados
+## ⚙️ Procesos Realizados
 
-* Conversión de fechas (string → DATE)
-* Eliminación de registros inválidos
-* Limpieza de texto (TRIM)
-* Eliminación de duplicados usando ROW_NUMBER()
+### 🔹 Eliminación de duplicados
+Se identificaron y eliminaron registros repetidos para evitar inconsistencias en el análisis.
 
-## 📤 Output
+---
 
-* Tabla: clean_orders
+### 🔹 Limpieza de datos
+- Corrección de valores inconsistentes
+- Estandarización de texto
+- Validación de campos
+
+---
+
+### 🔹 Manejo de valores nulos
+Se aplicaron diferentes estrategias según el caso:
+- Reemplazo de valores NULL
+- Mantenimiento de NULL cuando no afecta el análisis
+
+---
+
+### 🔹 Conversión de tipos de datos
+Se transformaron columnas a formatos adecuados:
+- Fechas (DATE)
+- Valores numéricos
+- Texto
+
+---
 
 ## 🧠 Objetivo
+Garantizar que los datos estén limpios, consistentes y listos para ser utilizados en el modelado y análisis.
 
-Garantizar la calidad de los datos antes del modelado y análisis.
+---
 
-## 📌 Tecnologías
-
-* SQL Server (SSMS)
-
-## 🚀 Autor
-
-Julio Manchay
+## 🛠️ Herramientas
+- SQL Server
+- T-SQL
