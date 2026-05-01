@@ -23,7 +23,7 @@ SET
   ship_date_clean = TRY_CONVERT(DATE, ship_date, 101);
 
 -- =====================================
--- 3. ELIMINAR DATOS INVÁLIDOS
+-- 3. ELIMINAR DATOS INVÃLIDOS
 -- =====================================
 
 DELETE FROM clean_orders
@@ -55,7 +55,7 @@ DELETE FROM cte
 WHERE rn > 1;
 
 -- =====================================
--- 6. VALIDACIÓN
+-- 6. VALIDACIÃ“N
 -- =====================================
 
 -- Conteo final
