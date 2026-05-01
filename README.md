@@ -1,123 +1,98 @@
-# 📊 End-to-End Data Analytics Project
+# 📊 Proyecto de Análisis de Datos de Ventas
 
-Este proyecto simula un flujo completo de análisis de datos en un entorno empresarial, desde datos crudos hasta insights de negocio.
+## 📌 Descripción
+Este proyecto presenta un flujo completo de análisis de datos (end-to-end), desde la limpieza de datos hasta la visualización en Power BI.
+
+El objetivo es transformar datos crudos en información útil para la toma de decisiones.
 
 ---
 
 ## 🧠 Objetivo
-
-Diseñar un sistema de análisis de ventas que permita:
-
-* Procesar datos crudos
-* Limpiar y validar información
-* Modelar datos para análisis
-* Generar métricas clave
-* Obtener insights de negocio
+- Limpiar y transformar datos
+- Diseñar un modelo de datos eficiente (Star Schema)
+- Analizar métricas clave del negocio
+- Crear un dashboard profesional
 
 ---
 
-## 🏗️ Arquitectura del Proyecto
+## 🧱 Estructura del Proyecto
 
-El flujo de datos sigue el siguiente proceso:
-
-Raw Data → Data Cleaning → Data Modeling → Data Analysis → Dashboard (próximamente)
-
----
-
-## 📁 Estructura del Proyecto
-
-```id="1uxjkg"
+```
 data-analytics-project/
 ├── 01_data_cleaning/
+│   ├── cleaning.sql
+│   └── README.md
+│
 ├── 02_data_modeling/
+│   ├── modeling.sql
+│   └── README.md
+│
 ├── 03_data_analysis/
+│   ├── analysis.sql
+│   └── README.md
+│
+├── 04_dashboard/
+│   ├── sales_dashboard.pbix
+│   ├── dashboard.png
+│   └── README.md
 ```
 
 ---
 
 ## ⚙️ Tecnologías Utilizadas
-
-* SQL Server
-* SQL Server Management Studio (SSMS)
-* Excel / Power BI (para visualización - próximamente)
-* GitHub
-
----
-
-## 🔹 1. Data Cleaning
-
-Se procesan datos crudos para mejorar su calidad:
-
-* Eliminación de duplicados
-* Conversión de fechas
-* Limpieza de texto
-* Manejo de valores nulos
-
-**Output:**
-
-* clean_orders
+- SQL Server
+- T-SQL
+- Power BI
+- GitHub
 
 ---
 
-## 🔹 2. Data Modeling
-
-Se implementa un modelo estrella (Star Schema):
-
-* fact_sales → métricas de ventas
-* dim_customer → información de clientes
-* dim_product → información de productos
-* dim_date → dimensión temporal
-
-Se aplican:
-
-* Primary Keys
-* Foreign Keys
-* Normalización de datos
+## 🔹 1. Limpieza de Datos (01_data_cleaning)
+- Eliminación de duplicados
+- Conversión de fechas
+- Limpieza de datos inconsistentes
+- Manejo de valores nulos
 
 ---
 
-## 🔹 3. Data Analysis
-
-Se realizan análisis orientados a negocio:
-
-* KPIs principales (Revenue, Orders, Ticket promedio)
-* Análisis temporal (tendencias y crecimiento mensual)
-* Segmentación de clientes
-* Productos más vendidos
-* Análisis geográfico
+## 🔹 2. Modelado de Datos (02_data_modeling)
+- fact_sales
+- dim_customer
+- dim_product
+- dim_date
 
 ---
 
-## 🔍 Insights Clave
-
-* Existe variabilidad en el crecimiento mensual de ingresos
-* Un grupo reducido de clientes concentra gran parte del revenue
-* Algunas categorías dominan las ventas totales
-* Se identifican regiones con menor desempeño
-
----
-
-## 📊 Dashboard
-
-Próxima fase del proyecto:
-
-* Construcción de dashboard en Excel o Power BI
-* Visualización de KPIs
-* Análisis interactivo
+## 🔹 3. Análisis de Datos (03_data_analysis)
+- Ingresos totales
+- Total de órdenes
+- Ticket promedio
+- Tendencias de ventas
+- Top clientes y productos
 
 ---
 
-## 🎯 Resultado
-
-Este proyecto demuestra:
-
-* Construcción de pipelines de datos
-* Modelado de datos tipo empresarial
-* Uso de SQL para análisis de negocio
-* Generación de insights accionables
+## 🔹 4. Dashboard (04_dashboard)
+- KPIs principales
+- Tendencia de ingresos
+- Top clientes
+- Top productos
+- Ingresos por estado
 
 ---
 
-## 🚀 Autor
+## 📊 Vista del Dashboard
+![Dashboard](04_dashboard/dashboard.png)
 
+---
+
+## 🔍 Insights Principales
+- Crecimiento de ingresos después de 2016
+- Alta concentración de ventas en pocos clientes
+- Productos líderes dominan ingresos
+- Estados clave concentran ventas
+
+---
+
+## 👤 Autor
 Julio Manchay
